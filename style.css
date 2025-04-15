@@ -1,4 +1,4 @@
-
+/*GENERAL*/
 html, body {
     height: 100%;
     margin: 0; 
@@ -40,7 +40,7 @@ footer {
     color: #fafafa;
   }
   
-  .heading::after {
+.heading::after {
     content: '';
     position: absolute;
     bottom: -1rem; 
@@ -59,17 +59,124 @@ footer {
     background-position: 200% 0;
     animation: slideUnderline 2.5s ease-in-out infinite;
     border-radius: 2px;
-  }
+}
     
-  @keyframes slideUnderline {
+@keyframes slideUnderline {
     0% {
       background-position: 200% 0;
     }
     100% {
       background-position: 0 0;
     }
-  }
+}
 
+
+/*NAV MENU*/
+.nav ul {
+    position: fixed;
+    top: 0;
+    left: 50;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+    background-color: #292829;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav li a {
+    display: block;
+    color: white; /* light neon yellowgreen */
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #bfff00, #adff2f, #7fff00); /* yellowgreen shades */
+    transition: width 0.3s ease;
+    border-radius: 999px;
+}
+
+.nav li a:hover::after {
+    width: 80%;
+}
+
+.nav li a:hover {
+    color: yellowgreen;
+}
+
+/*JAVASCRIPT PARTICLES*/
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0c0d;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats, .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+/*INTRODUCTION*/
 .intro-container {
     display: flex;
     align-items: center;
@@ -105,6 +212,8 @@ footer {
     color: white;
 }
 
+
+/*ABOUT*/
 .about-container {
     display: flex;
     flex-direction: column;
@@ -185,6 +294,36 @@ label {
     font-size: 15px;
 }
 
+
+/*ABOUT SOCIAL LINKS*/
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+.social-links i {
+    margin-right: 8px;
+}
+
+.fa-github {
+    font-size: 40px;
+}
+
+
+/*PROJECT SHOWCASE*/
 .project-content {
     display: flex;
     flex-direction: row;
@@ -223,8 +362,6 @@ label {
     font-size:15px;
 }
 
-
-
 .glow-wrapper {
     position: relative;
     display: inline-block;
@@ -246,8 +383,6 @@ label {
     transform: scale(1.1);
 }
 
-
-
 .glow-wrapper::before {
     content: '';
     position: absolute;
@@ -261,6 +396,8 @@ label {
     z-index: 0;
     animation: glowPulse 4s ease-in-out infinite;
 }
+
+/*PROJECT SHOWCASE BUTTONS*/
 
 .btn-container, .btn-container a {
     display: flex;
@@ -308,136 +445,8 @@ label {
 .btn-container a:hover {
     color: black;
 }
-.nav ul {
-    position: fixed;
-    top: 0;
-    left: 50;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    z-index: 1000;
-    background-color: #292829;
-}
 
-.nav li {
-    margin-right: 20px;
-}
-
-.nav li a {
-    display: block;
-    color: white; /* light neon yellowgreen */
-    padding: 14px 16px;
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.6rem;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.nav li a::after {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #bfff00, #adff2f, #7fff00); /* yellowgreen shades */
-    transition: width 0.3s ease;
-    border-radius: 999px;
-}
-
-.nav li a:hover::after {
-    width: 80%;
-}
-
-.nav li a:hover {
-    color: yellowgreen;
-}
-
-
-
-.social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: yellowgreen;
-    text-decoration: none;
-}
-
-.social-links a:hover {
-    color: white;
-}
-
-.social-links i {
-    margin-right: 8px;
-}
-
-.fa-github {
-    font-size: 40px;
-}
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #0d0c0d;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13e8e9;
-    font-size: 0.8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats, .count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
-}
-
+/*PROJECT IMAGES*/
 .design-imgs{
     display: flex;
     flex-direction: row;
