@@ -1,9 +1,4 @@
-if (isMobile()) {
-  if (window.pJSDom && window.pJSDom.length > 0) {
-    window.pJSDom[0].pJS.fn.vendors.destroypJS();
-    window.pJSDom = [];
-  }
-}
+
 
 particlesJS("particles-js", {
     particles: {
