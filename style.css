@@ -371,6 +371,17 @@ label {
     border-radius: 10px;
 }
 
+.mobile-image{
+    height:400px;
+    border:solid 5px white;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center; 
+}
+
 .project-image {
     width: 500px;
     height: 250px;
@@ -383,6 +394,10 @@ label {
 }
 
 .project-image:hover {
+    transform: scale(1.1);
+}
+
+.mobile-image:hover{
     transform: scale(1.1);
 }
 
@@ -497,6 +512,10 @@ label {
     margin-top:50px;
 }
 
+.pdf-position{
+    display: flex;
+    justify-content: center;
+}
 
   
   
