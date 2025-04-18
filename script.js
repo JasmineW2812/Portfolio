@@ -1,5 +1,3 @@
-
-
 particlesJS("particles-js", {
     particles: {
       number: {
@@ -75,5 +73,3 @@ particlesJS("particles-js", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
-
-  
