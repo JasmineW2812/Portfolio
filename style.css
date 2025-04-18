@@ -190,7 +190,11 @@ canvas {
     flex-direction: column;
     padding: 10px;
     position: relative;
-    line-height: 50%;
+}
+
+.intro-content h1{
+    margin-bottom:5px;
+    margin-top:0px;
 }
 
 
