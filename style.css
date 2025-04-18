@@ -451,6 +451,7 @@ label {
     display: flex;
     flex-direction: row;
     gap:20px;
+    padding-bottom:20px;
 }
 
 .design-box{
@@ -474,6 +475,14 @@ label {
 
 .indiv-project{
     padding: 50px;
+}
+
+.indiv-project h2{
+    margin-top:2%;
+}
+
+.indiv-project p{
+    text-align: start;
 }
 
 .carousel-position{

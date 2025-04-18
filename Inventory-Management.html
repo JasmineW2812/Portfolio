@@ -9,6 +9,7 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
     <div class="nav">
         <ul>
             <li><a class="active" href="home.html">Home</a></li>
@@ -22,102 +23,109 @@
         <h2>About Project</h2>
         
         <p>
-            This was a group project I worked on in my second year of university. I was appointed as the <strong>SCRUM Master</strong>, which meant I was responsible for helping the team stay organised and on track with deadlines, facilitating our Agile process, running stand-up meetings, and making sure we kept clear communication throughout the project.
+            This was a group project I worked on in my second year of university. I was the <strong>SCRUM Master</strong>, so I helped the team stay organised, ran stand-ups, made sure we stuck to deadlines, and kept everyone in the loop during the Agile process.
         </p>
         <p>
-            The goal of the project was to build a system that supports several different user types:
+            The goal was to build an inventory management system that supports several different types of users:
         </p>
         <ul>
-            <li><strong>Customers</strong> can view product availability in a specific branch.</li>
-            <li><strong>Cashiers</strong> can process in-person orders, which automatically generate and email invoices to customers while updating stock levels.</li>
-            <li><strong>Inventory Managers</strong> can add new products and adjust stock levels at different locations.</li>
-            <li><strong>Admins</strong> have access to full reporting tools, including stats like most popular products and total earnings, and can manage staff accounts.</li>
+            <li><strong>Customers</strong> can view product availability at their local branch.</li>
+            <li><strong>Cashiers</strong> can process walk-in orders, which automatically send out invoices and update stock levels.</li>
+            <li><strong>Inventory Managers</strong> can add new products and manage stock levels for each location.</li>
+            <li><strong>Admins</strong> have access to full reporting tools, like most popular products and total sales, and can manage all user accounts.</li>
         </ul>
         <p>
-            We designed and built the system using the <strong>MVC architecture</strong>, with <strong>Laravel</strong> for the backend and <strong>Bootstrap</strong> for the frontend to keep things responsive and user-friendly.
+            We followed the <strong>MVC architecture</strong>, using <strong>Laravel</strong> for the backend and <strong>Bootstrap</strong> for a responsive frontend.
         </p>
 
         <h2>Key Features</h2>
         <ul>
             <li>Product stock lookup by branch for customers</li>
-            <li>Order processing and automated invoicing for cashiers</li>
-            <li>Role-based access for inventory managers and admin</li>
-            <li>Live stock updates and inventory management tools</li>
-            <li>Admin dashboard with analytics and user management</li>
-            <li>Built using <strong>Laravel</strong> (PHP), <strong>Bootstrap</strong>, and <strong>MySQL</strong></li>
+            <li>Order processing and automatic invoicing for cashiers</li>
+            <li>Role-based access for inventory managers and admin users</li>
+            <li>Live stock updates and tools for inventory management</li>
+            <li>Admin dashboard with stats and user management</li>
+            <li>Built with <strong>Laravel</strong> (PHP), <strong>Bootstrap</strong>, and <strong>MySQL</strong></li>
         </ul>
 
         <h2>Process</h2>
-        <p></p>
+        <p>
+            The project followed an Agile methodology, and we broke it into two main sprints: one for core development and one for refining features and usability.
+        </p>
 
         <h3>Requirements Gathering</h3>
-        <p>We first listed all functional and non-functional requirements for the project and rated their priority levels.</p>
+        <p>We started by identifying all functional and non-functional requirements and prioritised them using MoSCoW (Must, Should, Could, Won’t) analysis.</p>
 
         <h3>Design</h3>
-        <p>We created ERD, C1, C2, C3, and C4 diagrams to plan out the structure and architecture.</p>
+        <p>We created various diagrams (ERD, use case, and C4 diagrams) to plan the system’s architecture and make sure everyone was on the same page.</p>
         <div class="design-imgs">
-          <img class="design-box" src ="Images/design-development/inv-erd.png">
-          <img class="design-box" src ="Images/design-development/inv-use-case.png">
+            <img class="design-box" src="Images/design-development/inv-erd.png" alt="ERD Diagram">
+            <img class="design-box" src="Images/design-development/inv-use-case.png" alt="Use Case Diagram">
         </div>
 
         <h3>Development</h3>
-        <p></p>
+        <p>
+            The first sprint was all about getting the core functionality up and running – things like user roles, order processing, and stock control. The second sprint focused on cleaning up the UI, testing, and improving the overall user experience.
+        </p>
 
         <h3>Testing</h3>
-        <p>We used user acceptance tests, created test cases, and conducted accessibility and non-functional testing using Chrome DevTools, Lighthouse, and device emulators. In addition to using ZAP for security testing</p>
+        <p>
+            We wrote test cases and ran user acceptance testing, as well as accessibility checks using Chrome DevTools and Lighthouse. We also used ZAP to check for any security vulnerabilities.
+        </p>
 
         <h3>Set Up</h3>
-        <p>This project also includes a very detailed read me set up file.</p>
-        <img  class="set-up" src ="Images/design-development/read-me.png">
+        <p>
+            We created a detailed README file that explains how to set up and run the project locally, including database configuration, dependencies, and key environment variables.
+        </p>
+        <img class="set-up" src="Images/design-development/read-me.png" alt="Read Me File Preview">
 
         <h3>Final Product</h3>
-        <p></p>
+        <p>
+            Here's a quick look at the finished system. It covers all the main use cases and works well across different screen sizes. Overall, I'm really proud of how it turned out, especially considering the time we had.
+        </p>
 
         <div class="carousel-position">
-          <div id="carouselExampleIndicators" class="carousel slide carousel-size">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-size">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/project-section/shop.png" class="d-block w-100" alt="Shop Page">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/final-product/cashier.png" class="d-block w-100" alt="Cashier Interface">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/final-product/email.png" class="d-block w-100" alt="Invoice Email">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/final-product/inv-stock.png" class="d-block w-100" alt="Stock Management">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/final-product/add-item.png" class="d-block w-100" alt="Add Product Page">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="Images/project-section/shop.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images/final-product/cashier.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images/final-product/email.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images/final-product/inv-stock.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="Images/final-product/add-item.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-
         </div>
-
-      </div>
     </div>
-  </div>
-        
-  <footer>
-  </footer>
+
+    <footer>
+    </footer>
 
 </body>
-
 </html>
+
 
