@@ -327,14 +327,37 @@ label {
 }
 
 /*PROJECT SHOWCASE*/
+
+.project-container {
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #5d5d5d31;
+    padding:20px;
+    opacity: 0.9;
+    border: 2px solid transparent;
+    margin-top:10px;
+    transition: 
+        border 0.5s ease, 
+        opacity 0.5s ease, 
+        background-color 0.5s ease, 
+        transform 0.3s ease;
+}
+
+.project-container:hover {
+    border: 2px solid white;
+    opacity: 1;
+    background-color: #5d5d5d50; 
+    transform: scale(1.02); 
+}
+
 .project-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: flex-start; 
-    padding-top: 50px;
-    width: 100%;
     height: auto; 
+    width:100%;
 }
 
 .my-projects-container .info{
@@ -347,7 +370,7 @@ label {
 .info-position{
     display:flex;
     justify-content: end;
-    margin-right:11%;
+    margin-right:10%;
 }
 
 .project-info-container {
@@ -393,31 +416,12 @@ label {
     display: block;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: center center; 
+    border:solid 2px white;
 }
 
-.project-image:hover {
-    transform: scale(1.1);
-}
 
-.mobile-image:hover{
-    transform: scale(1.1);
-}
 
-.glow-wrapper::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: linear-gradient(45deg, yellowgreen, lightgreen);
-    filter: blur(200px);
-    opacity: 0.9;
-    z-index: 0;
-    animation: glowPulse 4s ease-in-out infinite;
-}
+
 
 /*PROJECT SHOWCASE BUTTONS*/
 
